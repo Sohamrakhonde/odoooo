@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User info</title>
+    <link rel="stylesheet" href="/src/styles/mystyle.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div>
+                <label>Full Name:</label>
+                <input name="fullname">
+            </div>
+            <div>
+                <label>select Hobbies:</label>
+                <input id="h1" type="checkbox" name="hobbies" value="Singing" ><label for="h1">Singing</label>
+                <input id="h2" type="checkbox" name="hobbies" value="Dance"><label for="h1">Dancing</label>
+                <input id="h3" type="checkbox" name="hobbies" value="Trekking"><label for="h2"> Trekking</label>       
+            </div>
+            <div>
+                <label>Enter your Age:</label>
+                <input type="number" name="age" placeholder="age in complete years" min="18" max="90" step="5" required>
+            </div>
+            <div>
+                <label>Select month & year:</label>
+                <input type="month" name="monthofyear">
+            </div>
+            <div>
+                <label>Week of year:</label>
+                <input type="week" name="weekofyear">
+            </div>
+            <div>
+                <label>Login Time:</label>
+                <input type="time" name="loginTime">
+            </div>
+            <div>
+                <label>Flght Departure Date & Time<:/label>
+                <input type="datetime-local" name="flightDepDt">
+            </div>
+            <div>
+                <label>Email Address::</label>
+                <input type="email" placeholder="xyz@example.com" name="emailID">
+            </div>
+            <div>
+                <label>Mobile No:</label>
+                <input type="tell" name="MobileNo" placeholder="10 Digit" pattern="number" pattern="\d{10}">
+            </div>
+            <div>
+                <label>Educational Qualification (Degree):</label>
+                <select name="qualification">
+                    <option>B.tech</option>
+                    <option value="Science gradute">B.sc</option>
+                    <option>B.com</option>
+                    <option>B.A</option>
+                    <option value="Architehture Degree">B.arch</option>
+                    <option>B.voc</option>
+                    <option>B.E</option>
+                </select>
+            </div>
+            <div>
+                <label>Programming and Technical languages:</label>
+                <select name="skills" multiple title="Press control key(window user) or command key(Macos user) for select multiple option ">
+                    <option>C</option> 
+                    <option>C++</option>
+                    <option>HTML</option> 
+                    <option>CSS</option> 
+                    <option>Javascript</option> 
+                    <option>Java</option> 
+                    <option>Hibernate JPA</option>
+                    <option>Spring</option> 
+                    <option>Python</option>
+                </select>
+            </div>
+            <div>
+                <label>Enter Your Address:</label>
+                <textarea name="address" placeholder="Enter your home address"></textarea>
+            </div>
+            <div>
+                <label>select speaker volume(10 to 50):</label>
+                <input type="range" name="volume" min="10" max="70" step="5">
+            </div>
+            <div>
+                    <label>Select your Favorite Color</label>
+                    <input type="color" name="Favoritecolor" value="pink">
+                </div>
+                <div>
+                    <label>Upload Your Profile  </label>
+                    <input type="file" name="Resume">
+
+                </div>
+                <div>
+                    <label>Linked Profile URL</label>
+                    <input type="url" name="linkedinurl">
+                </div>
+                <div>
+                    <label>Profile Image</label>
+                    <input type="image" name="ProfileImage" src="/Fashionstore/public/images/Spiderman.jpeg" 
+                    width="50" alt="profile">
+                </div>
+                <div>
+                    <label>Battery Level:</label>
+                    <meter name="Batterylevel" min="10" max="100" low="15" high="90" value="70"
+                    ></meter>               
+                </div>
+                <div>
+                    <label>Download Progress: </label>
+                    <progress value="75" max="100" ></progress> 
+                </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
